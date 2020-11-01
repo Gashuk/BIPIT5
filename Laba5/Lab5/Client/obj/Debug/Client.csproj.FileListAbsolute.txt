@@ -1,0 +1,9 @@
+C:\Users\Денис\source\repos\Lab5\Client\bin\Debug\Client.exe.config
+C:\Users\Денис\source\repos\Lab5\Client\bin\Debug\Client.exe
+C:\Users\Денис\source\repos\Lab5\Client\bin\Debug\Client.pdb
+C:\Users\Денис\source\repos\Lab5\Client\obj\Debug\Client.MarkForm.resources
+C:\Users\Денис\source\repos\Lab5\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\Денис\source\repos\Lab5\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\Денис\source\repos\Lab5\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\Денис\source\repos\Lab5\Client\obj\Debug\Client.exe
+C:\Users\Денис\source\repos\Lab5\Client\obj\Debug\Client.pdb
