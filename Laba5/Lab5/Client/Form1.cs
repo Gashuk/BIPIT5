@@ -37,10 +37,10 @@ namespace Client
             dataGridView1.Columns[8].HeaderText = "Цена по плану";
             dataGridView1.Columns[9].HeaderText = "Цена итогавая";
             dataGridView1.Update();
-            comboBox1.DataSource = s.GetNameStudSelectData();
-            comboBox1.DisplayMember = "Name_vid_rabot";
+            comboBox1.DataSource = s.FillVid_rabot();
+            comboBox1.DisplayMember = "Vid_rabot";
             comboBox1.ValueMember = "ID_VID_RABOT";
-            comboBox2.DataSource = s.GetDisSelectData();
+            comboBox2.DataSource = s.FillOboryd();
             comboBox2.DisplayMember = "Model_oboryd";
             comboBox2.ValueMember = "ID_OBORYD";
 
@@ -59,29 +59,30 @@ namespace Client
             s.InsertMethod(ID_OBORYD, ID_VID_RABOT, Data_polychen, Data_vipolnen);
             Fill();
         }
-        
 
-        private void comboBox1_Validating(object sender, CancelEventArgs e)
-        {
-            if (String.IsNullOrEmpty(comboBox1.Text))
-            {
-                errorProvider1.SetError(comboBox1, "Не указана модель оборудования!!!");
-                return;
-            }
-            errorProvider1.Clear();       
-        }
 
-        private void comboBox2_Validating(object sender, CancelEventArgs e)
-        {
-            if (String.IsNullOrEmpty(comboBox2.Text))
-            {
-                errorProvider2.SetError(comboBox2, "Не указан вид работы!!!");
-                return;
-            }
-            errorProvider2.Clear();
-        
-        }
 
-       
+         private void comboBox1_Validating(object sender, CancelEventArgs e)
+         {
+             if (String.IsNullOrEmpty(comboBox1.Text))
+             {
+                 errorProvider1.SetError(comboBox1, "Не указана модель оборудования!!!");
+                 return;
+             }
+             errorProvider1.Clear();       
+         }
+
+         private void comboBox2_Validating(object sender, CancelEventArgs e)
+         {
+             if (String.IsNullOrEmpty(comboBox2.Text))
+             {
+                 errorProvider2.SetError(comboBox2, "Не указан вид работы!!!");
+                 return;
+             }
+             errorProvider2.Clear();
+
+         }
+
+
     }
 }
